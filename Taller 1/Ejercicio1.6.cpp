@@ -18,8 +18,8 @@ int main(){
 	altura = (2 * pi * r * (r + a));
 	volumen = (pi * ( r * r) * a);
 	
-	printf("El area de un cilindro es %f : " ,altura);
-	printf("El volumen de un cilindro es %f : " ,volumen);
+	printf("El area de un cilindro es %.2f : " ,altura);
+	printf("El volumen de un cilindro es %.2f : " ,volumen);
 	
 	return 0;
 }

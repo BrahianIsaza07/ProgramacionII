@@ -18,8 +18,8 @@ d = 4800;
 dolares = p / d;
 euros= p / e;
 
-printf("Pesos colombianos son equivalentes a %f : ",dolares,"dolares");
-printf("Pesos colombianos son equivalentes a %f : ",euros," euros");
+printf("Pesos colombianos son equivalentes a %.2f : ",dolares,"dolares");
+printf("Pesos colombianos son equivalentes a %.2f : ",euros," euros");
 
 return 0 ;
 }

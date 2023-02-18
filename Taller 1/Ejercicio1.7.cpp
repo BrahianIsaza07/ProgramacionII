@@ -21,7 +21,7 @@ salud = 46400;
 pension = 46400; 
 neto = basico - (salud + pension);
 
-printf("Su salario neto de este mes es %f  : ", neto );
+printf("Su salario neto de este mes es %.1f  : ", neto );
 	
 return 0 ;
 }

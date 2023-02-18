@@ -17,7 +17,7 @@ int main(){
 	d=d1+d2;
   	
 	
-	printf("La distancia recorrida del auto en los primeros 20s es %f :", d );
+	printf("La distancia recorrida del auto en los primeros 20s es %.1f :", d );
 	
 	
 	return 0;

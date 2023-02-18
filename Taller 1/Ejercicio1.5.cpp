@@ -18,8 +18,8 @@ int main(){
 	
 	volumen = (4 * pi * a*a*a )/3 ;
 	
-	printf("El Area de la esfera es %f : ", area); 
-	printf("El volumen de la esfera es %f : ", volumen);
+	printf("El Area de la esfera es %.2f : ", area); 
+	printf("El volumen de la esfera es %.2f : ", volumen);
 	
 	
 	
