@@ -14,8 +14,8 @@ float m,c2,c1;
 	c1 = (m / 1000);
 	c2 = (m * 100);
 
- printf("La conversion de metros a km es %.1f : \n", c1);
- printf("La conversion de metros a centimetros es %.1f : ", c2);
+ printf("La conversion de metros a km es %.1f : \n", m, c1);
+ printf("La conversion de metros a centimetros es %.1f : ", m, c2);
  
     return 0;
 }

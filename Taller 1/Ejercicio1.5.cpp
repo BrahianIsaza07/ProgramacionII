@@ -2,24 +2,23 @@
 //volumen de dicha esfera.
 
 #include <stdio.h>
-
+#define PI 3.1416
 
  
 
 int main(){
 	
 	float a, b, c, area, volumen;
-	float pi =3.1416;
 	
-	printf("Escriba el radio a calcular de una esfera: ");
+	printf("Escriba el radio a calcular de una esfera \n");
 	scanf("%f",&a);
 	
-	area = (4 * pi * a*a);
+	area = (4 * PI * a*a);
 	
-	volumen = (4 * pi * a*a*a )/3 ;
+	volumen = (4 * PI * a*a*a )/3 ;
 	
-	printf("El Area de la esfera es %.2f : ", area); 
-	printf("El volumen de la esfera es %.2f : ", volumen);
+	printf("El Area de la esfera es : %.2f \n ", area); 
+	printf("El volumen de la esfera es : %.2f", volumen);
 	
 	
 	

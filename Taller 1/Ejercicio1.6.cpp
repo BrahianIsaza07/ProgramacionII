@@ -2,24 +2,25 @@
 //área y el volumen de un cilindro.
 
 #include<stdio.h>
+#include<math.h>
+#define PI 3.1416
 
 int main(){
 	
-	float a, r, volumen, altura, pi;
-	pi= 3,1416;
-	
-	printf("Ingrese la altura de un cilindro: ");
-	scanf("%f",&a);
+	double altura, radio, volumen, area;
 	
 	printf("Ingrese el radio de un cilindro: ");
-	scanf("%f",&r);
+	scanf("%lf",&radio);
+	
+	printf("Ingrese la altura de un cilindro: ");
+	scanf("%lf",&altura);
 	
 	
-	altura = (2 * pi * r * (r + a));
-	volumen = (pi * ( r * r) * a);
+	area = 2 * PI * radio * (radio + altura);
+	volumen = PI * pow(radio,2) * altura;
 	
-	printf("El area de un cilindro es %.2f : " ,altura);
-	printf("El volumen de un cilindro es %.2f : " ,volumen);
+	printf("El area de un cilindro es %.2lf \n " ,area);
+	printf("El volumen de un cilindro es %.2lf \n " ,volumen);
 	
 	return 0;
 }

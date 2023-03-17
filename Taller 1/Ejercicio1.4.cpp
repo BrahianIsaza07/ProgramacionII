@@ -6,20 +6,17 @@
 int main(){
 
 	
-float e,d,dolares,p,euros;
+float euros = 5000,dolares = 4800,monedacol,dolar, euro;
 	
-printf("Ingresa la cantidad de dinero : ");
-scanf("%f",&p);
+printf("Ingresa la cantidad de dinero \n");
+scanf("%f",&monedacol);
 
 
-e = 5000;
-d = 4800;
+dolar = monedacol / dolares;
+euro= monedacol / euros;
 
-dolares = p / d;
-euros= p / e;
-
-printf("Pesos colombianos son equivalentes a %.2f : ",dolares,"dolares");
-printf("Pesos colombianos son equivalentes a %.2f : ",euros," euros");
+	printf("El equivalente de Cop a USD es :%.2f\n", dolar); 
+	printf("El equivalente de cop a EU es :%.2f\n", euro);
 
 return 0 ;
 }

@@ -3,25 +3,32 @@
 //en cuenta que al trabajador le realizan descuentos por salud y pensión con base en los
 //montos de ley (neto=salario de los días trabajados – salud – pensión)
 
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-int main(){
-char n;
-float basico,salud,pension,neto;
-int d;
+	float calcularSalario(char nombre[], float sueldoBasico, int diasTrabajados){
+    float salarioBruto = sueldoBasico * diasTrabajados;
+    float descuentoSalud = salarioBruto * 0.04;
+    float descuentoPension = salarioBruto * 0.04;
+    float salarioNeto = salarioBruto - descuentoPension - descuentoSalud;
 
-printf("Digite el nombre : ");
-scanf("%s",&n);
+    return salarioNeto;
+}
 
-printf("Digite los dias trabajados : ");
-scanf("%d",&d);
+int main() {
+    char nombre[50];
+    float sueldoBasico;
+    int diasTrabajados;
 
-basico = 1160000;
-salud = 46400;
-pension = 46400; 
-neto = basico - (salud + pension);
+    printf("Ingresa el nombre del Colaborador: \n");
+    scanf("%s", nombre);
+    printf("Ingresa el salario basico mensual: \n");
+    scanf("%f", &sueldoBasico);
+    printf("Ingresa los dias laborados: \n");
+    scanf("%d", &diasTrabajados);
 
-printf("Su salario neto de este mes es %.1f  : ", neto );
-	
-return 0 ;
+    float salarioNeto = calcularSalario(nombre, sueldoBasico, diasTrabajados);
+    printf("El salario de %s es de %.2f.\n", nombre, salarioNeto);
+
+    return 0;
 }
